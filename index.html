@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: #0a192f;
+      color: #ccd6f6;
+      line-height: 1.6;
+    }
+
+    /* Grid Layout */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Card Styles */
+    .card {
+      background: #112240;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      display: block;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .card h2 {
+      color: #64ffda;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      color: #8892b0;
+      font-size: 1rem;
+    }
+
+    /* Header Styles */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: #0a192f;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #64ffda;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #8892b0;
+    }
+
+    /* Footer Styles */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #112240;
+      margin-top: 40px;
+    }
+
+    footer p {
+      color: #8892b0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Alexander's Portfolio</h1>
+    <p>Exploring creativity through code and design.</p>
+  </header>
+
+  <!-- Portfolio Grid -->
+  <div class="portfolio-grid">
+    <!-- About Me Card -->
+    <a href="about.html" class="card">
+      <h2>About Me</h2>
+      <p>Learn more about who I am, my background, and my passions.</p>
+    </a>
+
+    <!-- Skills Card -->
+    <a href="skills.html" class="card">
+      <h2>Skills</h2>
+      <p>Discover the technologies and tools I specialize in.</p>
+    </a>
+
+    <!-- Projects Card -->
+    <a href="projects.html" class="card">
+      <h2>Projects</h2>
+      <p>Explore my recent projects and see what I've been working on.</p>
+    </a>
+
+    <!-- Contact Card -->
+    <a href="contact.html" class="card">
+      <h2>Contact</h2>
+      <p>Get in touch with me for collaborations or inquiries.</p>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p></p>
+  </footer>
+</body>
+</html>
