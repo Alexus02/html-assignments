@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unique Portfolio</title>
   <style>
-    /* General Styles */
     body {
       margin: 0;
       padding: 0;
@@ -15,7 +14,6 @@
       line-height: 1.6;
     }
 
-    /* Grid Layout */
     .portfolio-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -25,7 +23,6 @@
       margin: 0 auto;
     }
 
-    /* Card Styles */
     .card {
       background: #112240;
       border-radius: 10px;
@@ -53,7 +50,6 @@
       font-size: 1rem;
     }
 
-    /* Header Styles */
     header {
       text-align: center;
       padding: 60px 20px;
@@ -71,7 +67,6 @@
       color: #8892b0;
     }
 
-    /* Footer Styles */
     footer {
       text-align: center;
       padding: 20px;
@@ -82,43 +77,56 @@
     footer p {
       color: #8892b0;
     }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 3px solid #64ffda;
+    }
   </style>
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <h1>Welcome to Alexander's Portfolio</h1>
+        <h1>Welcome to Alexander's Portfolio</h1>
     <p>Exploring creativity through code and design.</p>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
   </header>
 
-  <!-- Portfolio Grid -->
   <div class="portfolio-grid">
-    <!-- About Me Card -->
     <a href="about.html" class="card">
       <h2>About Me</h2>
       <p>Learn more about who I am, my background, and my passions.</p>
     </a>
 
-    <!-- Skills Card -->
-    <a href="skills.html" class="card">
+    <a class="card">
       <h2>Skills</h2>
-      <p>Discover the technologies and tools I specialize in.</p>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Mobile App Development with Flutter</li>
+        <li>C++, Dart, Python</li>
+        <li>Database Management with SQL</li>
+      </ul>
     </a>
 
-    <!-- Projects Card -->
-    <a href="projects.html" class="card">
+    <a class="card">
       <h2>Projects</h2>
-      <p>Explore my recent projects and see what I've been working on.</p>
+      <ul>
+        <li>Interactive Portfolio</li>
+        <li>Step counting algorithm in python using permutations</li>
+        <li>To-do List Mobile App</li>
+      </ul>
     </a>
 
-    <!-- Contact Card -->
-    <a href="contact.html" class="card">
+    <a  class="card">
       <h2>Contact</h2>
-      <p>Get in touch with me for collaborations or inquiries.</p>
+      <p>Feel free to reach out to me for collaborations or inquiries:</p>
+    <p>Email: otookofialex@gmail.com</p>
+    <p>Phone: +233 599 05 4440</p>
     </a>
   </div>
 
-  <!-- Footer -->
   <footer>
     <p></p>
   </footer>
